@@ -1,0 +1,33 @@
+
+
+.navigation{
+    display:flex;
+    flex-direction: column;
+
+    padding-inline: 5px;
+    padding-block: 10px;
+    position: fixed;
+    left:10px;
+    gap:30px;
+    top:10px;
+
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 2px solid rgba(205, 205, 205, 0.702);
+    
+    
+}
+
+
+.option_svg{
+    fill:black;
+    padding: 1px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.option_svg:hover{
+    fill:var(--orange);
+}

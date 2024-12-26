@@ -4,16 +4,78 @@
   box-sizing: border-box;
 }
 
+
+@font-face {
+  font-family: "Arial - modified";
+  size-adjust: 92%;
+  
+  src: local(Arial);
+}
+
+@font-face { /*see https://www.youtube.com/watch?v=zK-yy6C2Nck&t=108s*/
+  font-family: "mukta";
+  src: url('../assets/fonts/mukta-regular-webfont.woff2') format('woff2'),
+  url('../assets/fonts/mukta-regular-webfont.woff') format('woff');
+}
+
+
+:root{
+  --body_color:#faece1;
+  --orange:#db8632;
+
+  --fontWeight-regular:300;
+  --fontWeight-semi-bold:400;
+  --fontWeight-bold:700;
+
+}
+
+
+::-webkit-scrollbar {
+  width: 9px;
+    
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #db8632;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #46cb9f;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ccae9a;
+}
+
+
+
+
+::selection {
+  color: #1c1c1c;
+  background: #46cb9f;
+}  
+
+
+
 body {
-  color: white;
+  color: #090908;
   width: 100dvw;
   overflow-x: hidden;
   height: 100%;
-  background: #000;
-  border-color: #3b3b3b;
-  user-select: none;
+  background: #faece1;
+  font-family: "outfit", "mukta", "Arial - modified";
+  font-weight: var(--fontWeight-regular);
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 canvas {
   touch-action: none;
+}
+
+img, svg{
+  max-width: 100%;
+  display:block;
 }

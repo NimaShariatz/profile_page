@@ -4,7 +4,9 @@ const App = () => {
   return (
     <main className="bg-black">
       <Navigation/>
-
+      <div style={{paddingBottom: "1600px"}}>
+        
+      </div>
       
     </main>
   )
