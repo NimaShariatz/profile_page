@@ -20,8 +20,15 @@
 
 
 :root{
-  --body_color:#faece1;
-  --orange:#db8632;
+  --body_color:#f7fbfc;
+  --blue1:#80c4de;
+  --blue2:#38a9d6;
+
+  --yellow1:#edb563;
+
+  --sect_color1:#bedde8;
+  --sect_color2:#e9adc4;
+  --sect_color3:#edb563;
 
   --fontWeight-regular:300;
   --fontWeight-semi-bold:400;
@@ -36,17 +43,17 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #db8632;
+  background-color: var(--blue1);
   border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #46cb9f;
+  background: var(--yellow1);
   cursor: pointer;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #ccae9a;
+  background-color: var(--blue2);
 }
 
 
@@ -64,7 +71,7 @@ body {
   width: 100dvw;
   overflow-x: hidden;
   height: 100%;
-  background: #faece1;
+  background: #f7fbfc;
   font-family: "outfit", "mukta", "Arial - modified";
   font-weight: var(--fontWeight-regular);
   font-size: 18px;

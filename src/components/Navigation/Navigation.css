@@ -1,0 +1,61 @@
+
+
+#navigation{
+    display:flex;
+    flex-direction: column;
+
+    padding-inline: 2px;
+    padding-block: 20px;
+    position: fixed;
+    left:10px;
+    gap:30px;
+    top:10px;
+
+    background: rgba(255, 255, 255);
+    border-radius: 15px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(205, 205, 205, 0.702);
+    
+    opacity: 0;
+
+
+    box-shadow:
+        0px 0.7px 3.2px rgba(0, 0, 0, 0.1),
+        0px 1.7px 7.6px rgba(0, 0, 0, 0.072),
+        0px 3.3px 14.4px rgba(0, 0, 0, 0.06),
+        0px 5.8px 25.7px rgba(0, 0, 0, 0.05),
+        0px 10.9px 48px rgba(0, 0, 0, 0.04),
+        0px 26px 115px rgba(0, 0, 0, 0.028)
+    ;
+    
+
+}
+
+
+
+
+#navigation, .option_svg{
+    fill:rgb(43, 43, 43);
+    border: 1px solid transparent;
+
+    
+    transition: all 100ms linear;
+    
+}
+
+#navigation, .option_svg:hover{
+    border: 0 solid transparent;
+    transition: all 100ms linear;
+
+}
+
+#navigation, .option_svg:nth-child(1):hover{
+    fill:var(--sect_color1);
+}
+#navigation, .option_svg:nth-child(2):hover{
+    fill:var(--sect_color2);
+}
+#navigation, .option_svg:nth-child(3):hover{
+    fill:var(--yellow1);
+}
