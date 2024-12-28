@@ -1,0 +1,52 @@
+.uofa_img{
+    height: 100vh;
+    width: 90%;
+    clip-path: url(#clip);
+    object-fit: cover;
+    transform: translate(-3px, -3px);
+    z-index: 1;
+    
+}
+.linear_gradient_uofa{
+    position: absolute;
+    height: 100vh;
+    width: 0;
+    clip-path: url(#clip);
+    transform: translate(4vw, -3px);
+    z-index: 2;
+    opacity: 0;
+    
+    background-image: linear-gradient(to right, #80c3de00,  #80c3de0c, #80c3de9a);
+}
+
+
+.svg{
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    
+}
+
+
+.uofa_img_border{
+    height: 100vh;
+    width: 0;
+    clip-path: url(#clip);
+    object-fit: cover;
+    transform: translate(-3px, -3px);
+    background-color: var(--sect_color1);
+    position: absolute;
+    transform: scale(1.01);
+    left: 0;
+    top: 0;
+    z-index: 0;
+    opacity: 0;
+}
+
+
+.tempo{
+
+    background: linear-gradient(135deg, #88daf7, #0172b0);
+
+}

@@ -15,9 +15,9 @@ const Navigation = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 760) {
-        gsap.to("#navigation", { x: -100, duration: 1.4 });
+        gsap.to("#navigation", { x: -100, duration: 1});
       } else {
-        gsap.to("#navigation", { x: 10, opacity: 0.4, duration: 1.4 });
+        gsap.to("#navigation", { x: 10, opacity: 0.4, duration: 1 });
       }
     };
 
