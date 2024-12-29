@@ -1,4 +1,4 @@
-import {uofa_img, profile} from "../../constants/index.js"
+import {uofa_img, profile, logo_uofa} from "../../constants/index.js"
 import '../Education/Education.css';
 import { useEffect, useState } from 'react';
 import gsap from "gsap";
@@ -11,9 +11,36 @@ const Education = () => {
         gsap.to(".uofa_img_border", { width: '93%', duration: 3.1, opacity: 1, ease:"back.out" });
         gsap.to("#uofa_div", { width: '90%', duration: 3, opacity: 1, ease:"back.out" });
 
-        gsap.to("#profile_card", { left: '6%', duration: 3, opacity: 1, ease:"back.out" });
+        if (window.innerWidth > 760) {
+            gsap.to("#edu_card_container", { left: '9%', duration: 3, opacity: 1, ease:"back.out" });
+        }else{
+            gsap.to("#edu_card_container", { left: '8%', duration: 2, opacity: 1, ease:"ease" });
+        }
 
+        
+        
     }, []);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 760) {
+                gsap.to("#edu_card_container", { left: '9%', duration: 3, opacity: 1, ease:"back.out" });
+            }else{
+                gsap.to("#edu_card_container", { left: '8%', duration: 2, opacity: 1, ease:"ease" });
+            }
+        };
+
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
+
+
 
 
 
@@ -49,19 +76,22 @@ const Education = () => {
             </svg>
             <div className="clipped"></div>
  
-            <div id="profile_card">
-                <div style={{ display: 'flex' }}>
-                    <img className="profile_img" src={profile} alt="University of Alberta"/>
-                    <h1 style={{paddingLeft:"10px", color:"#fff"}}>Nima Shariatzadeh</h1>
+
+            <div id="edu_card_container">
+                <div id="profile_card">
+                    <div style={{ display: 'flex' }}>
+                        <img className="profile_img" src={profile} alt="Nima Shariatzadeh"/>
+                        <h1 style={{paddingLeft:"10px", color:"#fff"}}>Nima Shariatzadeh</h1>
+                    </div>
                 </div>
+
+                <div id="edu_card">
+                    <h1 style={{color:"var(--blue2)"}}>University of Alberta</h1>
+                    <h2>Bachelor of Science, Computing Science-Major </h2>
+                </div>
+
             </div>
 
-
-            <div className="edu_card">
-                
-            </div>
-
- 
  
         </div>
         

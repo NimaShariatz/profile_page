@@ -21,12 +21,12 @@
 
 :root{
   --body_color:#f7fbfc;
-  --blue1:#80c4de;
+  --blue1:#bedde8;
   --blue2:#38a9d6;
 
   --yellow1:#edb563;
 
-  --sect_color1:#bedde8;
+  --sect_color1:#80c4de;
   --sect_color2:#e9adc4;
   --sect_color3:#edb563;
 
@@ -62,14 +62,12 @@
 ::selection {
   color: #1c1c1c;
   /*background: #46cb9f;*/
-  background: var(--yellow1);
+  background: var(--blue1);
 }  
 
 
 
 body {
-
-
   overflow-x: hidden;
   color: #1c1c1c;
   height: 100%;
@@ -88,3 +86,34 @@ img, svg{
   max-width: 100%;
   display:block;
 }
+
+h1{
+  font-size: 35px;
+}
+h2{
+  font-size: 27px;
+}
+h3{
+  font-size: 22px;
+}
+
+
+@media (max-width: 760px) {
+  body{
+    font-size: 3vw;
+  }
+
+  h1{
+    font-size: 7vw;
+  }
+  h2{
+    font-size: 5vw;
+  }
+  h3{
+    font-size: 4vw;
+  }
+
+
+
+}
+
