@@ -1,4 +1,4 @@
-import {uofa_img} from "../../constants/index.js"
+import {uofa_img, profile} from "../../constants/index.js"
 import '../Education/Education.css';
 import { useEffect, useState } from 'react';
 import gsap from "gsap";
@@ -10,6 +10,9 @@ const Education = () => {
     useEffect(() => {
         gsap.to(".uofa_img_border", { width: '93%', duration: 3.1, opacity: 1, ease:"back.out" });
         gsap.to("#uofa_div", { width: '90%', duration: 3, opacity: 1, ease:"back.out" });
+
+        gsap.to("#profile_card", { left: '6%', duration: 3, opacity: 1, ease:"back.out" });
+
     }, []);
 
 
@@ -45,9 +48,25 @@ const Education = () => {
                 <clipPath id="clip" clipPathUnits="objectBoundingBox"><path d="M0.727,0.487 C0.921,0.36,0.725,0.131,1,0.001 H0.001 V1 C0.001,0.915,0.152,0.917,0.227,0.952 C0.269,0.969,0.372,1,0.453,1 C0.534,1,0.603,0.991,0.655,0.952 C0.713,0.911,0.683,0.815,0.629,0.761 C0.561,0.694,0.659,0.531,0.727,0.487"></path></clipPath>
             </svg>
             <div className="clipped"></div>
+ 
+            <div id="profile_card">
+                <div style={{ display: 'flex' }}>
+                    <img className="profile_img" src={profile} alt="University of Alberta"/>
+                    <h1 style={{paddingLeft:"10px", color:"#fff"}}>Nima Shariatzadeh</h1>
+                </div>
+            </div>
+
+
+            <div className="edu_card">
+                
+            </div>
+
+ 
+ 
         </div>
         
 
+ 
 
     </div>
     )

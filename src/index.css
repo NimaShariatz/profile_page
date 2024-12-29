@@ -61,15 +61,17 @@
 
 ::selection {
   color: #1c1c1c;
-  background: #46cb9f;
+  /*background: #46cb9f;*/
+  background: var(--yellow1);
 }  
 
 
 
 body {
-  color: #090908;
-  width: 100dvw;
+
+
   overflow-x: hidden;
+  color: #1c1c1c;
   height: 100%;
   background: #f7fbfc;
   font-family: "outfit", "mukta", "Arial - modified";
