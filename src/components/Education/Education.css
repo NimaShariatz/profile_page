@@ -50,8 +50,13 @@
     z-index: 5;
     box-shadow: var(--box_shadow);
     border-radius: 20px;
+    transition: transform 0.25s ease;
 
 }
+#edu_card_container:hover{
+    transform: scale(1.05);
+}
+
 
 #profile_card{
 
@@ -93,7 +98,17 @@
     box-shadow: var(--box_shadow);
     border-radius: 20px;
     background-color: #fff;
+    transition: transform 0.25s ease;
 
+}
+
+#education_focus_card:hover{
+    transform: scale(1.05);
+}
+#education_focus_card h1 p{
+    color:var(--blue2);
+    display: inline;
+    text-Wrap: nowrap;
 }
 
 
@@ -114,5 +129,10 @@
     #education_focus_card{
         width: 82vw;
     }
+
+    #education_focus_card h1 p{
+        text-wrap: wrap;
+    }
+    
 }
 

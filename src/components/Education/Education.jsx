@@ -8,8 +8,8 @@ import gsap from "gsap";
 const Education = () => {
 
     useEffect(() => {
-        gsap.to(".uofa_img_border", { width: '93%', duration: 3.1, ease:"back.out" });
-        gsap.to("#uofa_div", { width: '90%', duration: 3, ease:"back.out" });
+        gsap.to(".uofa_img_border", { width: '93%', duration: 3.1, ease:"back.out", opacity:1 });
+        gsap.to("#uofa_div", { width: '90%', duration: 3, ease:"back.out", opacity:1 });
 
         if (window.innerWidth > 760) {
             gsap.to("#edu_card_container", { left: '9%', duration: 3, ease:"back.out" });
@@ -102,7 +102,7 @@ const Education = () => {
 
 
             <div id="education_focus_card">
-                <h1>With a focus on <p style={{ color:"var(--blue2)", display:"inline", textWrap:"nowrap"}}>Front-end Development</p></h1>
+                <h1>With a focus on <p>Front-end Development</p></h1>
             </div>
 
  
