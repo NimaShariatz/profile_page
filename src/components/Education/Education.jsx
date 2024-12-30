@@ -8,13 +8,17 @@ import gsap from "gsap";
 const Education = () => {
 
     useEffect(() => {
-        gsap.to(".uofa_img_border", { width: '93%', duration: 3.1, opacity: 1, ease:"back.out" });
-        gsap.to("#uofa_div", { width: '90%', duration: 3, opacity: 1, ease:"back.out" });
+        gsap.to(".uofa_img_border", { width: '93%', duration: 3.1, ease:"back.out" });
+        gsap.to("#uofa_div", { width: '90%', duration: 3, ease:"back.out" });
 
         if (window.innerWidth > 760) {
-            gsap.to("#edu_card_container", { left: '9%', duration: 3, opacity: 1, ease:"back.out" });
+            gsap.to("#edu_card_container", { left: '9%', duration: 3, ease:"back.out" });
+            gsap.to("#education_focus_card", { right: '5%', duration: 3, ease:"back.out" });
+
         }else{
-            gsap.to("#edu_card_container", { left: '8%', duration: 2, opacity: 1, ease:"ease" });
+            gsap.to("#edu_card_container", { left: '8%', duration: 2, ease:"ease" });
+            gsap.to("#education_focus_card", { right: '12%', duration: 2, ease:"ease" });
+
         }
 
         
@@ -24,9 +28,13 @@ const Education = () => {
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth > 760) {
-                gsap.to("#edu_card_container", { left: '9%', duration: 3, opacity: 1, ease:"back.out" });
+                gsap.to("#edu_card_container", { left: '9%', duration: 3, ease:"ease" });
+                gsap.to("#education_focus_card", { right: '5%', duration: 3, ease:"ease" });
+
             }else{
-                gsap.to("#edu_card_container", { left: '8%', duration: 2, opacity: 1, ease:"ease" });
+                gsap.to("#edu_card_container", { left: '8%', duration: 2, ease:"ease" });
+                gsap.to("#education_focus_card", { right: '12%', duration: 2, ease:"ease" });
+
             }
         };
 
@@ -90,6 +98,11 @@ const Education = () => {
                     <h2>Bachelor of Science, Computing Science-Major </h2>
                 </div>
 
+            </div>
+
+
+            <div id="education_focus_card">
+                <h1>With a focus on <p style={{ color:"var(--blue2)", display:"inline", textWrap:"nowrap"}}>Front-end Development</p></h1>
             </div>
 
  

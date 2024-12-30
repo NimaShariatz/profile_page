@@ -48,6 +48,9 @@
     left:-500px;
     top:2vw;
     z-index: 5;
+    box-shadow: var(--box_shadow);
+    border-radius: 20px;
+
 }
 
 #profile_card{
@@ -76,18 +79,22 @@
     padding-block: 20px;
     background: #fff;
     border-radius: 0 0 20px 20px;
-
-    box-shadow:
-        0px 0px 1.5px rgba(0, 0, 0, 0.05),
-        0px 0px 3.9px rgba(0, 0, 0, 0.034),
-        0px 0px 8px rgba(0, 0, 0, 0.028),
-        0px 0px 16.4px rgba(0, 0, 0, 0.022),
-        0px 0px 45px rgba(0, 0, 0, 0.016)
-    ;
 }
 
 
+#education_focus_card{
+    position: absolute;
+    right: -650px;
+    bottom: 17vw;
+    width: 445px;
+    z-index: 5;
+    padding-inline: 23px;
+    padding-block: 20px;
+    box-shadow: var(--box_shadow);
+    border-radius: 20px;
+    background-color: #fff;
 
+}
 
 
 
@@ -102,6 +109,10 @@
     .profile_img{
         width: 9vw;
         height: 9vw;
+    }
+
+    #education_focus_card{
+        width: 82vw;
     }
 }
 
