@@ -1,4 +1,4 @@
-import {uofa_img, profile, logo_uofa} from "../../constants/index.js"
+import {uofa_img, profile} from "../../constants/index.js"
 import '../Education/Education.css';
 import { useEffect, useState } from 'react';
 import gsap from "gsap";
