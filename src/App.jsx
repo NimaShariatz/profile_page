@@ -5,7 +5,7 @@ import Education_touchedOn from "./components/Education/Education_touchedOn.jsx"
 
 const App = () => {
   return (
-    <main className="bg-black">
+    <main>
       <Navigation/>
       <Education/>
       <Education_touchedOn/>
