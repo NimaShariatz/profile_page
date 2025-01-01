@@ -8,8 +8,27 @@ import gsap from "gsap";
 const Education = () => {
 
     useEffect(() => {
-        gsap.to(".uofa_img_border", { width: '93%', duration: 3.1, ease:"back.out", opacity:1 });
-        gsap.to("#uofa_div", { width: '90%', duration: 3, ease:"back.out", opacity:1 });
+        //gsap.to(".uofa_img_border", { width: '93%', duration: 3.1, ease:"back.out", opacity:1 });
+
+        
+        gsap.to("#uofa_img_border", { width: '92%', duration: 3, ease:"back.out", opacity:1, onComplete: () => {
+            gsap.to("#uofa_img_border", { width: '85%', duration: 8, ease: "sine.inOut", yoyo: true, repeat: -1 });
+            gsap.to("#uofa_img_border", { width: '94%', duration: 8, ease: "sine.inOut", yoyo: true, repeat: -1, delay: 1 });
+        }});
+
+       
+       
+       
+        //gsap.to("#uofa_div", { width: '90%', duration: 3, ease:"back.out", opacity:1 });
+
+
+        gsap.to("#uofa_div", { width: '91%', duration: 3, ease:"back.out", opacity:1, onComplete: () => {
+            gsap.to("#uofa_div", { width: '85%', duration: 6, ease: "sine.inOut", yoyo: true, repeat: -1 });
+            gsap.to("#uofa_div", { width: '91%', duration: 6, ease: "sine.inOut", yoyo: true, repeat: -1, delay: 1 });
+        }});
+
+
+
 
         if (window.innerWidth > 760) {
             gsap.to("#edu_card_container", { left: '9%', duration: 3, ease:"back.out" });
@@ -73,7 +92,7 @@ const Education = () => {
     <div>
 
 
-        <div className="uofa_img_border"></div>
+        <div id="uofa_img_border"></div>
 
         <div>
             <div className="linear_gradient_uofa" id="uofa_div" onMouseEnter={grow_uofa} onMouseLeave={noramlize_uofa}></div>

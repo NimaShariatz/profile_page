@@ -27,7 +27,7 @@
 }
 
 
-.uofa_img_border{
+#uofa_img_border{
     height: 100vh;
     width: 0;
     clip-path: url(#clip);
@@ -133,6 +133,7 @@
     top: -10%;
     left: 0;
     z-index: 0;
+    opacity: 0;
 
 }
 

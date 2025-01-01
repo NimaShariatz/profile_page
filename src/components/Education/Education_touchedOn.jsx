@@ -2,8 +2,13 @@ import * as THREE from 'three';
 import { useEffect, useState } from 'react';
 import '../Education/Education.css';
 import gsap from "gsap";
+import { useRef } from "react";
+import { ScrollTrigger } from "gsap/all";
+
+
 
 import {logo_react, logo_android, logo_assembly, logo_c_, logo_css, logo_figma, logo_html, logo_java, logo_javascript, logo_junit, logo_python, logo_sql} from "../../constants/index.js"
+import { useGSAP } from '@gsap/react';
 
 
 
@@ -69,7 +74,7 @@ const Education_touchedOn = () => {
         const materials = images.map(image => new THREE.MeshStandardMaterial({
             map: textureLoader.load(image),
             roughness: 0,
-            opacity: 1,
+            opacity: 0.6,
             transparent: true
         }));
 
@@ -153,6 +158,8 @@ const Education_touchedOn = () => {
             for (let i = 0; i < cube_cords.length; i++) {
                 cubes[i].rotation.x += 0.0005;
                 cubes[i].rotation.y += 0.0005;
+
+                
             }
 
             /*
@@ -165,6 +172,9 @@ const Education_touchedOn = () => {
             camera.lookAt(scene.position);
             
             */
+            // GSAP animation to reveal cubes one by one
+
+
 
 
 
@@ -183,17 +193,74 @@ const Education_touchedOn = () => {
 
 
 
-    
-    
-    
-    
+    /*GSAP animation things here*/
+    /*
+    const scrollRef = useRef();// react related
+    gsap.registerPlugin(ScrollTrigger);
+
+    useEffect(() => {
+        const elements = scrollRef.current.querySelectorAll('h1');
+        elements.forEach((element, index) => {
+            gsap.fromTo(element, 
+                { opacity: 0 }, 
+                { 
+                    opacity: 1, 
+                    scrollTrigger: {
+                        trigger: element,
+                        start: "top 70%",
+                        end: "top 30%",
+                        scrub: true
+                    }
+                }
+            );
+        });
+    }, []);
+
+    */
+
+    const scrollRef = useRef();// react related
+    gsap.registerPlugin(ScrollTrigger);
+
+    useEffect(() => {
+        const elements = scrollRef.current.querySelectorAll('h1');
+        elements.forEach((element, index) => {
+            gsap.fromTo(element, 
+                { opacity: 0 }, 
+                { 
+                    opacity: 1, 
+                    delay: index * 0.2, // Delay each element reveal
+                    scrollTrigger: {
+                        trigger: '#touched_on',
+                        start: "top center",
+                        end: "bottom center",
+                        toggleActions: "play none none none"
+                    }
+                }
+            );
+        });
+
+        gsap.to('#webgl', {
+            opacity: 1,
+            delay: 0.3,
+            ease: "linear",
+            duration: 0.8,
+            scrollTrigger: {
+                trigger: '#touched_on',
+                start: "top center",
+                end: "bottom center",
+                toggleActions: "play none none none"
+            }
+        });
+    }, []);
+
+
     return (
     <div style={{marginTop:"15vw"}}>
 
         
         <div style={{position: "relative" }}>
-            <div className='webgl_text'>
-                <h1 style={{color:"#38a9d6"}}>Touched on</h1>
+            <div className='webgl_text' ref={scrollRef}>
+                <h1 id="touched_on" style={{color:"#38a9d6"}}>Touched on</h1>
                 <h1 style={{color:"#55a9dc", paddingLeft:"3vw"}}>Python</h1>
                 <h1 style={{color:"#6da9e0", paddingLeft:"3vw"}}>C</h1>
                 <h1 style={{color:"#83a9e2", paddingLeft:"3vw"}}>HTML & CSS</h1>
