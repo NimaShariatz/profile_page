@@ -103,9 +103,9 @@ const Education_touchedOn = () => {
         scene.add(cubes[11]);
 
         //Light
-        const light = new THREE.AmbientLight(0xffffff, 100, 100)
+        const light = new THREE.AmbientLight(0xe7f2f6, 100, 100)
         light.position.set(0, 10, 10)
-        light.intensity = 5
+        light.intensity = 4
         scene.add(light)
 
         //Sizes
@@ -121,13 +121,13 @@ const Education_touchedOn = () => {
         scene.add(camera)
 
         // Renderer
-        var canvas = document.querySelector('.webgl')
+        var canvas = document.getElementById('webgl')
         const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
         renderer.setPixelRatio(window.devicePixelRatio);//makes things look smoother
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.render(scene, camera)
 
-
+        
         //Resizing
         window.addEventListener('resize', () => {
             sizes.width = window.innerWidth
@@ -136,6 +136,8 @@ const Education_touchedOn = () => {
             camera.updateProjectionMatrix()
             camera.aspect = sizes.width / sizes.height
             renderer.setSize(sizes.width, sizes.height)// they must be in sync with camera aspect
+
+            
         })
 
 
@@ -166,6 +168,7 @@ const Education_touchedOn = () => {
 
 
 
+
             renderer.render(scene, camera);
         };
 
@@ -185,28 +188,26 @@ const Education_touchedOn = () => {
     
     
     return (
-    <div>
+    <div style={{marginTop:"15vw"}}>
 
         
-
-        <div style={{background:"transparent"}}>
-
-            <h1>Touched on</h1>
-            <h1>Python</h1>
-            <h1>C</h1>
-            <h1>HTML & CSS</h1>
-            <h1>Java</h1>
-            <h1>Junit</h1>
-            <h1>Javascript</h1>
-            <h1>ASM</h1>
-            <h1>React</h1>
-            <h1>Android Studio</h1>
-            <h1>SQL</h1>
-            <h1>Figma</h1>
+        <div style={{position: "relative" }}>
+            <div className='webgl_text'>
+                <h1 style={{color:"#38a9d6"}}>Touched on</h1>
+                <h1 style={{color:"#55a9dc", paddingLeft:"3vw"}}>Python</h1>
+                <h1 style={{color:"#6da9e0", paddingLeft:"3vw"}}>C</h1>
+                <h1 style={{color:"#83a9e2", paddingLeft:"3vw"}}>HTML & CSS</h1>
+                <h1 style={{color:"#97a8e2", paddingLeft:"3vw"}}>Java</h1>
+                <h1 style={{color:"#a7a7e0", paddingLeft:"3vw"}}>Junit</h1>
+                <h1 style={{color:"#b6a7de", paddingLeft:"3vw"}}>Javascript</h1>
+                <h1 style={{color:"#c3a7da", paddingLeft:"3vw"}}>ASM</h1>
+                <h1 style={{color:"#d0a8d5", paddingLeft:"3vw"}}>React</h1>
+                <h1 style={{color:"#daa9cf", paddingLeft:"3vw"}}>Android Studio</h1>
+                <h1 style={{color:"#e2aaca", paddingLeft:"3vw"}}>SQL</h1>
+                <h1 style={{color:"#e9adc4", paddingLeft:"3vw"}}>Figma</h1>
+            </div>
+            <canvas id="webgl"></canvas>
         </div>
-
-        <canvas className="webgl"></canvas>
-
 
     </div>
   )
