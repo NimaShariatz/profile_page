@@ -261,17 +261,20 @@ const Education_touchedOn = () => {
         <div style={{position: "relative" }}>
             <div className='webgl_text' ref={scrollRef}>
                 <h1 id="touched_on" style={{color:"#38a9d6"}}>Touched on</h1>
-                <h1 style={{color:"#55a9dc", paddingLeft:"3vw"}}>Python</h1>
-                <h1 style={{color:"#6da9e0", paddingLeft:"3vw"}}>C</h1>
-                <h1 style={{color:"#83a9e2", paddingLeft:"3vw"}}>HTML & CSS</h1>
-                <h1 style={{color:"#97a8e2", paddingLeft:"3vw"}}>Java</h1>
-                <h1 style={{color:"#a7a7e0", paddingLeft:"3vw"}}>Junit</h1>
-                <h1 style={{color:"#b6a7de", paddingLeft:"3vw"}}>Javascript</h1>
-                <h1 style={{color:"#c3a7da", paddingLeft:"3vw"}}>ASM</h1>
-                <h1 style={{color:"#d0a8d5", paddingLeft:"3vw"}}>React</h1>
-                <h1 style={{color:"#daa9cf", paddingLeft:"3vw"}}>Android Studio</h1>
-                <h1 style={{color:"#e2aaca", paddingLeft:"3vw"}}>SQL</h1>
-                <h1 style={{color:"#e9adc4", paddingLeft:"3vw"}}>Figma</h1>
+                <h1 style={{color:"#55a9dc", padding:"0.2vw", paddingLeft:"3vw"}}>Python</h1>
+                <h1 style={{color:"#6da9e0", padding:"0.2vw", paddingLeft:"3vw"}}>C</h1>
+                <h1 style={{color:"#83a9e2", padding:"0.2vw", paddingLeft:"3vw"}}>HTML & CSS</h1>
+                <h1 style={{color:"#97a8e2", padding:"0.2vw", paddingLeft:"3vw"}}>Java</h1>
+                <h1 style={{color:"#a7a7e0", padding:"0.2vw", paddingLeft:"3vw"}}>Junit</h1>
+                <h1 style={{color:"#b6a7de", padding:"0.2vw", paddingLeft:"3vw"}}>Javascript</h1>
+                <h1 style={{color:"#c3a7da", padding:"0.2vw", paddingLeft:"3vw"}}>ASM</h1>
+                <h1 style={{color:"#d0a8d5", padding:"0.2vw", paddingLeft:"3vw"}}>React</h1>
+                <h1 style={{color:"#daa9cf", padding:"0.2vw", paddingLeft:"3vw"}}>Android Studio</h1>
+                <h1 style={{color:"#e2aaca", padding:"0.2vw", paddingLeft:"3vw"}}>SQL</h1>
+                <h1 style={{color:"#e9adc4", padding:"0.2vw", paddingLeft:"3vw"}}>Figma</h1>
+
+                <h1 style={{color:"#e9adc4", padding:"0.2vw"}}>Always expanding on languages and frameworks</h1>
+
             </div>
             <canvas id="webgl"></canvas>
         </div>
