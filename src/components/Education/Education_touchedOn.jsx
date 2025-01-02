@@ -184,6 +184,26 @@ const Education_touchedOn = () => {
 
         animate();
 
+        /*logic for the up and down effect for cubes*/
+        cubes.forEach((cube, i) => {
+            gsap.fromTo(cube.position, 
+            {
+                y: cube_cords[i][1],
+                duration: 6,
+                ease: "sine.inOut",
+                yoyo: true
+            }, 
+            {
+                y: (cube_cords[i][1] + 0.8),
+                duration: 6,
+                ease: "sine.inOut",
+                yoyo: true,
+                delay: Math.floor(Math.random() * 8),
+                repeat: -1
+            }
+            );
+        });
+
         // Cleanup on component unmount
         return () => {
             renderer.dispose();
@@ -193,32 +213,8 @@ const Education_touchedOn = () => {
 
 
 
-    /*GSAP animation things here*/
-    /*
-    const scrollRef = useRef();// react related
-    gsap.registerPlugin(ScrollTrigger);
 
-    useEffect(() => {
-        const elements = scrollRef.current.querySelectorAll('h1');
-        elements.forEach((element, index) => {
-            gsap.fromTo(element, 
-                { opacity: 0 }, 
-                { 
-                    opacity: 1, 
-                    scrollTrigger: {
-                        trigger: element,
-                        start: "top 70%",
-                        end: "top 30%",
-                        scrub: true
-                    }
-                }
-            );
-        });
-    }, []);
-
-    */
-
-    const scrollRef = useRef();// react related
+    const scrollRef = useRef();// react related. not useful in this case
     gsap.registerPlugin(ScrollTrigger);
 
     useEffect(() => {
