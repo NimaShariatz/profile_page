@@ -1,7 +1,7 @@
 import Navigation from "./components/Navigation/Navigation.jsx"
 import Education from "./components/Education/Education.jsx"
 import Education_touchedOn from "./components/Education/Education_touchedOn.jsx"
-import Project from "./components/Project/project.jsx"
+import Project_sect from "./components/Project/Project_sect.jsx"
 
 
 const App = () => {
@@ -10,7 +10,8 @@ const App = () => {
       <Navigation/>
       <Education/>
       <Education_touchedOn/>
-      <Project/>
+      <Project_sect/>
+
 
 
 

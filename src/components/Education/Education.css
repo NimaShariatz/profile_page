@@ -1,7 +1,7 @@
 .uofa_img{
     height: 100vh;
     width: 90%;
-    clip-path: url(#clip);
+    clip-path: url(#clip_edu);
     object-fit: cover;
     transform: translate(-3px, -3px);
     z-index: 1;
@@ -11,7 +11,7 @@
     position: absolute;
     height: 100vh;
     width: 0;
-    clip-path: url(#clip);
+    clip-path: url(#clip_edu);
     transform: translate(4vw, -3px);
     z-index: 2;
     opacity: 0;
@@ -30,7 +30,7 @@
 #uofa_img_border{
     height: 100vh;
     width: 0;
-    clip-path: url(#clip);
+    clip-path: url(#clip_edu);
     object-fit: cover;
     transform: translate(-3px, -3px);
     background-color: var(--blue1);

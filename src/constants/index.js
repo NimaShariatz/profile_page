@@ -15,7 +15,7 @@ import junit from "/assets/images/junit_logo.jpg"
 import python from "/assets/images/python_logo.png"
 import sql from "/assets/images/sql_logo.png"
 
-
+import project_header from "/assets/images/project_page.png"
 
 
 export const uofa_img = uofa;
@@ -37,3 +37,5 @@ export const logo_javascript = javascript
 export const logo_junit = junit
 export const logo_python = python
 export const logo_sql = sql
+
+export const project_pic = project_header

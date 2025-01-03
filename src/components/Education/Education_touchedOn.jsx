@@ -269,7 +269,7 @@ const Education_touchedOn = () => {
                 <h1 style={{color:"#e2aaca", padding:"0.2vw", paddingLeft:"3vw"}}>SQL</h1>
                 <h1 style={{color:"#e9adc4", padding:"0.2vw", paddingLeft:"3vw"}}>Figma</h1>
 
-                <h1 style={{color:"#e9adc4", padding:"0.2vw"}}>Always expanding on languages and frameworks</h1>
+                <h1 style={{color:"#fcd0e1", padding:"0.2vw"}}>Always expanding on languages and frameworks</h1>
 
             </div>
             <canvas id="webgl"></canvas>
