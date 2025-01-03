@@ -11,7 +11,7 @@ const Education = () => {
         //gsap.to(".uofa_img_border", { width: '93%', duration: 3.1, ease:"back.out", opacity:1 });
 
         
-        gsap.to("#uofa_img_border", { width: '92%', duration: 3, ease:"back.out", opacity:1, onComplete: () => {
+        gsap.to("#uofa_img_border", { width: '92%', duration: 3, ease:"back.out", delay: 1, opacity:1, onComplete: () => {
             gsap.to("#uofa_img_border", { width: '85%', duration: 8, ease: "sine.inOut", yoyo: true, repeat: -1 });
             gsap.to("#uofa_img_border", { width: '94%', duration: 8, ease: "sine.inOut", yoyo: true, repeat: -1, delay: 1 });
         }});
@@ -22,7 +22,7 @@ const Education = () => {
         //gsap.to("#uofa_div", { width: '90%', duration: 3, ease:"back.out", opacity:1 });
 
 
-        gsap.to("#uofa_div", { width: '91%', duration: 3, ease:"back.out", opacity:1, onComplete: () => {
+        gsap.to("#uofa_div", { width: '91%', duration: 3, ease:"back.out", delay: 1, opacity:1, onComplete: () => {
             gsap.to("#uofa_div", { width: '85%', duration: 6, ease: "sine.inOut", yoyo: true, repeat: -1 });
             gsap.to("#uofa_div", { width: '91%', duration: 6, ease: "sine.inOut", yoyo: true, repeat: -1, delay: 1 });
         }});
@@ -31,8 +31,8 @@ const Education = () => {
 
 
         if (window.innerWidth > 760) {
-            gsap.to("#edu_card_container", { left: '9%', duration: 3, ease:"back.out" });
-            gsap.to("#education_focus_card", { right: '5%', duration: 3, ease:"back.out" });
+            gsap.to("#edu_card_container", { left: '9%', duration: 3, ease:"back.out", delay: 1 });
+            gsap.to("#education_focus_card", { right: '5%', duration: 3, ease:"back.out", delay: 1 });
 
         }else{
             gsap.to("#edu_card_container", { left: '8%', duration: 2, ease:"ease" });
