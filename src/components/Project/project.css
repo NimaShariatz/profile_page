@@ -1,4 +1,4 @@
-.project_img{
+#project_img{
     height: 100vh;
     width: 100%;
     clip-path: url(#clip_project);
@@ -7,7 +7,7 @@
     opacity: 0.9;
     
 }
-.linear_gradient_project{
+#linear_gradient_project{
     position: absolute;
     height: 0;
     width: 100%;
@@ -61,7 +61,7 @@
 }
 
 #project_headerCard_container:hover{
-    transform: scale(1.02);
+    transform: translateX(5px)
 }
 #project_headerCard_container h1{
     display: "inline";
@@ -76,6 +76,19 @@
 }
 
 
+.project_link{
+    text-Wrap: nowrap;
+    display: inline;
+}
+.project_link svg{
+    width: 15px;
+    height: 15px;
+    text-Wrap: nowrap;
+    display: inline;
+    transform: translateY(2px);
+}
+
+
 
 
 
@@ -87,18 +100,21 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    background-color: aqua;
+    /*background-color: aqua;*/
     padding-inline: 85px;
 
     margin-top: 15vw;
 }
-.grid_container div{
-    background-color: #f1f1f1;
+.a_project{
+    background-color: #fff;
     padding-inline: 12px;
     padding-block: 20px;
-
-    
-
+    border-radius: 20px;
+    box-shadow: var(--box_shadow);
+    transition: transform 0.15s ease;
+}
+.a_project:hover{
+    transform: scale(1.02);
 }
 
 @media (max-width: 760px) {

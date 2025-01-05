@@ -54,7 +54,7 @@
 
 }
 #edu_card_container:hover{
-    transform: scale(1.03);
+    transform: translateX(5px)
 }
 
 
@@ -103,7 +103,7 @@
 }
 
 #education_focus_card:hover{
-    transform: scale(1.03);
+    transform: translateX(-5px)
 }
 #education_focus_card h1 p{
     color:var(--blue2);
