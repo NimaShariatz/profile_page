@@ -75,6 +75,9 @@
   background: var(--blue1);
 }  
 
+html{
+  scroll-behavior: smooth;/*that smooth scroll effect when clicking a link on the side menu*/
+}
 
 
 body {

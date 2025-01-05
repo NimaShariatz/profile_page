@@ -111,10 +111,14 @@
     padding-block: 20px;
     border-radius: 20px;
     box-shadow: var(--box_shadow);
-    transition: transform 0.15s ease;
+    outline: 2px solid transparent;
+    transition: box-shadow 0.15s ease, outline 0.15s ease;
 }
 .a_project:hover{
-    transform: scale(1.02);
+    box-shadow: none;
+    transition: box-shadow 0.15s ease, outline 0.15s ease;
+    outline-color: var(--sect_color2);
+
 }
 
 @media (max-width: 760px) {

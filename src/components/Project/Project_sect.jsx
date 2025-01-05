@@ -76,7 +76,7 @@ const Project_sect = () => {
     
       return (
     
-        <div style={{marginTop:"35vw"}}>
+        <div id='Projects' style={{marginTop:"35vw"}}>
 
         <div style={{position: "relative"}}>
           <div id="project_img_border"></div>
@@ -102,7 +102,7 @@ const Project_sect = () => {
 
             <div className='a_project'>
               <img style={{borderRadius:"30px"}} src={project_pic} alt="University of Alberta"/>
-              <h2 style={{paddingInline: "8px", paddingBlock: "10px"}}>ReneWool</h2>
+              <h2 style={{paddingInline: "8px", paddingTop: "18px"}}>ReneWool</h2>
               <p style={{paddingInline: "8px"}}>A project involving multiple disciplines, with the objective of the wiki 
                 team being to produce a public website which serves to showcase the science team’s findings in a novel way.</p>
               <div style={{display:"flex", justifyContent: "space-between", paddingBlock:"30px"}}>

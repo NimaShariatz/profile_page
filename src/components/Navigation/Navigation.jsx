@@ -53,13 +53,13 @@ const Navigation = () => {
 
   return (
     <nav id='navigation' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <a className='anchor' href="#" onMouseOver={() => changeBorderColor("#bedde8")} onMouseOut={() => changeBorderColor("rgba(205, 205, 205, 0.702)")}>
+      <a className='anchor' href="#Education" onMouseOver={() => changeBorderColor("#bedde8")} onMouseOut={() => changeBorderColor("rgba(205, 205, 205, 0.702)")}>
         <svg className="option_svg1" xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px">
           <path d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z"/>
         </svg>
       </a>
 
-      <a className='anchor' href="#" onMouseOver={() => changeBorderColor("#e9adc4")} onMouseOut={() => changeBorderColor("rgba(205, 205, 205, 0.702)")}>
+      <a className='anchor' href="#Projects" onMouseOver={() => changeBorderColor("#e9adc4")} onMouseOut={() => changeBorderColor("rgba(205, 205, 205, 0.702)")}>
         <svg className="option_svg2" xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px">
           <path d="M120-200q-33 0-56.5-23.5T40-280v-400q0-33 23.5-56.5T120-760h400q33 0 56.5 23.5T600-680v400q0 33-23.5 56.5T520-200H120Zm0-80h400v-400H120v400Zm560 80v-560h80v560h-80Zm160 0v-560h80v560h-80Zm-720-80v-400 400Z"/>
         </svg>

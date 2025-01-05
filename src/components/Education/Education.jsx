@@ -89,7 +89,7 @@ const Education = () => {
 
 
     return (
-    <div>
+    <div id="Education">
 
 
         <div id="uofa_img_border"></div>
