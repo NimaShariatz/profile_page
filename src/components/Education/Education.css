@@ -90,7 +90,7 @@
 #education_focus_card{
     position: absolute;
     right: -650px;
-    bottom: 17vw;
+    top: 60%;
     width: 445px;
     z-index: 5;
     padding-inline: 23px;

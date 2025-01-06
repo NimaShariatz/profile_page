@@ -17,6 +17,7 @@ import sql from "/assets/images/sql_logo.png"
 
 import project_header from "/assets/images/project_page.png"
 
+import code_img from "/assets/images/code_img.png"
 
 export const uofa_img = uofa;
 
@@ -39,3 +40,5 @@ export const logo_python = python
 export const logo_sql = sql
 
 export const project_pic = project_header
+
+export const code = code_img
