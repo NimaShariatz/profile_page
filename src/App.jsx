@@ -16,7 +16,7 @@ const App = () => {
 
 
 
-      <div style={{paddingBottom: "1600px"}}>
+      <div style={{paddingBottom: "500px"}}>
         
       </div>
       

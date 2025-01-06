@@ -121,7 +121,7 @@ const Education = () => {
 
 
             <div id="education_focus_card">
-                <h1>With a focus on <p>Front-end Development</p></h1>
+                <h1>With a Focus on <p>Front-end Development</p></h1>
             </div>
 
  
