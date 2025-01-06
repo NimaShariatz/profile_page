@@ -15,7 +15,8 @@ import junit from "/assets/images/junit_logo.jpg"
 import python from "/assets/images/python_logo.png"
 import sql from "/assets/images/sql_logo.png"
 
-import project_header from "/assets/images/project_page.png"
+import project_header from "/assets/images/project_header.png"
+import project_renewool from "/assets/images/RenewWool.png"
 
 import code_img from "/assets/images/code_img.png"
 
@@ -39,6 +40,7 @@ export const logo_junit = junit
 export const logo_python = python
 export const logo_sql = sql
 
+export const renewWool = project_renewool
 export const project_pic = project_header
 
 export const code = code_img

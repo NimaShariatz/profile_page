@@ -86,6 +86,16 @@
     box-shadow: var(--box_shadow);
     padding: 20px;
     border-radius: 20px;
+    box-shadow: var(--box_shadow);
+
+    box-shadow: var(--box_shadow);
+    outline: 2px solid transparent;
+    transition: box-shadow 0.15s ease, outline 0.15s ease;
+}
+.experience_item:hover{
+    box-shadow: none;
+    transition: box-shadow 0.15s ease, outline 0.15s ease;
+    outline-color: var(--sect_color3);
 }
 
 

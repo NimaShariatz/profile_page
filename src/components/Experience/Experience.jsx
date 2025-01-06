@@ -9,13 +9,13 @@ const Experience = () => {
     
         gsap.to("#experience_img_border", { height: '98%', duration: 3, ease:"back.out", delay: 1, opacity:1, onComplete: () => {
             gsap.to("#experience_img_border", { scaleY: '1.1', duration: 11, ease: "sine.inOut", yoyo: true, repeat: -1 });
-            gsap.to("#experience_img_border", { scaleY: '1.18', duration: 11, ease: "sine.inOut", yoyo: true, repeat: -1});
+            gsap.to("#experience_img_border", { scaleY: '1.19', duration: 11, ease: "sine.inOut", yoyo: true, repeat: -1});
         }});
     
     
         gsap.to("#linear_gradient_experience", { height: '100%', duration: 3, ease:"back.out", delay: 1, opacity:1, onComplete: () => {
             gsap.to("#linear_gradient_experience", { scaleY: '1.11', duration: 8, ease: "sine.inOut", yoyo: true, repeat: -1 });
-            gsap.to("#linear_gradient_experience", { scaleY: '1.21', duration: 8, ease: "sine.inOut", yoyo: true, repeat: -1});
+            gsap.to("#linear_gradient_experience", { scaleY: '1.22', duration: 8, ease: "sine.inOut", yoyo: true, repeat: -1});
         }});
 
 

@@ -3,7 +3,7 @@ import gsap from "gsap";
 
 import '../Project/Project.css';
 
-import {project_pic} from "../../constants/index.js"
+import {project_pic, renewWool} from "../../constants/index.js"
 
 const Project_sect = () => {
 
@@ -101,7 +101,7 @@ const Project_sect = () => {
           <div className='grid_container'>
 
             <div className='a_project'>
-              <img style={{borderRadius:"20px"}} src={project_pic} alt="University of Alberta"/>
+              <img style={{borderRadius:"20px"}} src={renewWool} alt="University of Alberta"/>
               <h2 style={{paddingInline: "8px", paddingTop: "18px"}}>ReneWool</h2>
               <p style={{paddingInline: "8px"}}>A project involving multiple disciplines, with the objective of the wiki 
                 team being to produce a public website which serves to showcase the science team’s findings in a novel way.</p>
