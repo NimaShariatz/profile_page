@@ -79,13 +79,22 @@
 .project_link{
     text-Wrap: nowrap;
     display: inline;
+    padding-top: 6px;
+    text-decoration: none;
+    color: var(--font_color);
+}
+.project_link:visited{
+    color: var(--sect_color2);
 }
 .project_link svg{
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     text-Wrap: nowrap;
     display: inline;
     transform: translateY(2px);
+}
+.project_link:visited{
+    fill: var(--sect_color2)
 }
 
 
@@ -118,6 +127,14 @@
     box-shadow: none;
     transition: box-shadow 0.15s ease, outline 0.15s ease;
     outline-color: var(--sect_color2);
+}
+
+
+.language{
+
+    background-image: linear-gradient(to right bottom, #ececec77, #f1f1f177, #f5f5f577, #fafafa77, #ffffff77);
+    outline: 2px solid rgba(209, 209, 209, 0.34);
+    border-radius: 50%;
 
 }
 

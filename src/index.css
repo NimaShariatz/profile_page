@@ -20,7 +20,8 @@
 
 
 :root{
-  /*--body_color:#f7fbfc;*/
+  --font_color:#1c1c1c;
+
   --body_color:#f7fbfc;
   --blue1:#bedde8;
   --blue2:#38a9d6;
@@ -82,7 +83,7 @@ html{
 
 body {
   overflow-x: hidden;
-  color: #1c1c1c;
+  color: var(--font_color);
   height: 100%;
   background: var(--body_color);
   font-family: "outfit", "mukta", "Arial - modified";
