@@ -132,8 +132,8 @@
 
 .language{
 
-    background-image: linear-gradient(to right bottom, #ececec77, #f1f1f177, #f5f5f577, #fafafa77, #ffffff77);
-    outline: 2px solid rgba(209, 209, 209, 0.34);
+    background-image: linear-gradient(to right bottom, #ececec, #f1f1f1, #f5f5f5, #fafafa, #ffffff);
+    outline: 2px solid rgb(235, 235, 235);
     border-radius: 50%;
 
 }
