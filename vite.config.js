@@ -7,7 +7,7 @@ export default defineConfig({
 })
 
 //used https://www.youtube.com/watch?v=hn1IkJk24ow for showing how to deploy on github pages properly
-
+//to update github page(gh-pages branch) to what master branch is, do "npm run deploy"
 
 
 // https://vite.dev/config/
