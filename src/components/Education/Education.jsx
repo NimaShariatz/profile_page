@@ -3,6 +3,9 @@ import '../Education/Education.css';
 import { useEffect, useState } from 'react';
 import gsap from "gsap";
 
+import {start_width, start_height} from "../../constants/index.js"
+
+
 
 
 const Education = () => {
@@ -30,7 +33,7 @@ const Education = () => {
 
 
 
-        if (window.innerWidth > 760) {
+        if (start_width > 760) {
             gsap.to("#edu_card_container", { left: '9%', duration: 3, ease:"back.out", delay: 1 });
             gsap.to("#education_focus_card", { right: '5%', duration: 3, ease:"back.out", delay: 1 });
 

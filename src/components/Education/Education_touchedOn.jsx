@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/all";
 
 
 import {logo_react, logo_android, logo_assembly, logo_c_, logo_css, logo_figma, logo_html, logo_java, logo_javascript, logo_junit, logo_python, logo_sql} from "../../constants/index.js"
+import {start_width, start_height} from "../../constants/index.js"
 import { useGSAP } from '@gsap/react';
 
 
@@ -115,10 +116,11 @@ const Education_touchedOn = () => {
 
         //Sizes
         const sizes = {
-            width: window.innerWidth,
-            height: window.innerHeight
+            width: start_width,
+            height: start_height
         }
 
+        
 
         // Camera
         const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -129,18 +131,18 @@ const Education_touchedOn = () => {
         var canvas = document.getElementById('webgl')
         const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
         renderer.setPixelRatio(window.devicePixelRatio);//makes things look smoother
-        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setSize(sizes.width, sizes.height);
         renderer.render(scene, camera)
 
         
         //Resizing
         window.addEventListener('resize', () => {
-            sizes.width = window.innerWidth
-            sizes.height = window.innerHeight
+
+            
           
             camera.updateProjectionMatrix()
-            camera.aspect = sizes.width / sizes.height
-            renderer.setSize(sizes.width, sizes.height)// they must be in sync with camera aspect
+            camera.aspect = window.innerWidth / window.innerHeight
+            renderer.setSize(window.innerWidth, window.innerHeight)// they must be in sync with camera aspect
 
             
         })

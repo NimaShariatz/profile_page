@@ -1,10 +1,12 @@
 import '../Navigation/Navigation.css';
 import gsap from "gsap";
 import { useEffect, useState } from 'react';
+import {start_width, start_height} from "../../constants/index.js"
+
 
 const Navigation = () => {
   useEffect(() => {
-    if (window.innerWidth > 760) {
+    if (start_width > 760) {
       gsap.fromTo("#navigation", { x: -100, ease: "power2.out"}, { x: 10, opacity: 0.4, duration: 1.8, delay: 2  });
     } else {
       gsap.to("#navigation", { x: -100 });

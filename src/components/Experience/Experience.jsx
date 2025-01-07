@@ -2,6 +2,8 @@ import {code} from "../../constants/index.js"
 import '../Experience/Experience.css';
 import { useEffect, useState } from 'react';
 import gsap from "gsap";
+import {start_width, start_height} from "../../constants/index.js"
+
 
 const Experience = () => {    
 
@@ -19,7 +21,7 @@ const Experience = () => {
         }});
 
 
-        if (window.innerWidth > 760) {
+        if (start_width > 760) {
           gsap.to("#experience_headerCard_container", { left: '80px', duration: 3, ease:"back.out", delay: 1 });
 
           
@@ -68,7 +70,7 @@ const Experience = () => {
 
 
 
-    <div id='Experience' style={{marginTop: "35vw"}}>
+    <div id='Experience' style={{marginTop: "30vw"}}>
         
         <div style={{position: "relative"}}>
             <div id="experience_img_border"></div>
@@ -84,7 +86,7 @@ const Experience = () => {
             </div>
         </div>
 
-        <div style={{marginTop: "13vw"}}>
+        <div style={{marginTop: "15vw"}}>
             <div className="experience_item">
                 <h3>University of Alberta</h3>
                 <div style={{display: "flex", justifyContent: "space-between"}}>

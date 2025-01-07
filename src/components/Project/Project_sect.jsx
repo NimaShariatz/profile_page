@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import gsap from "gsap";
+import {start_width, start_height} from "../../constants/index.js"
+
 
 import '../Project/Project.css';
 
@@ -21,7 +23,7 @@ const Project_sect = () => {
         }});
 
 
-        if (window.innerWidth > 760) {
+        if (start_width > 760) {
           gsap.to("#project_headerCard_container", { left: '80px', duration: 3, ease:"back.out", delay: 1 });
 
           
@@ -76,7 +78,7 @@ const Project_sect = () => {
     
       return (
     
-        <div id='Projects' style={{marginTop:"35vw"}}>
+        <div id='Projects' style={{marginTop:"30vw"}}>
 
           <div style={{position: "relative"}}>
             <div id="project_img_border"></div>

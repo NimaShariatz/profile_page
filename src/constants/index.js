@@ -44,3 +44,8 @@ export const renewWool = project_renewool
 export const project_pic = project_header
 
 export const code = code_img
+
+export const start_width = window.innerWidth
+export const start_height = window.innerHeight
+
+
