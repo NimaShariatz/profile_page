@@ -142,9 +142,9 @@ const Project_sect = () => {
               </div>
             </div>
             
+            <div className='a_project'>Flutter Django Foodapp Project &#40;In progress&#41;</div>
             <div className='a_project'>In progress...</div>
-            <div className='a_project'>In progress...</div>
-            <div className='a_project'>In progress...</div>
+            <div className='a_project'>2025 IGEM Biology Project &#40;In progress&#41;</div>
 
           </div>
     

@@ -10,14 +10,14 @@ const Experience = () => {
     useEffect(() => {
     
         gsap.to("#experience_img_border", { height: '98%', duration: 3, ease:"back.out", delay: 1, opacity:1, onComplete: () => {
-            gsap.to("#experience_img_border", { scaleY: '1.1', duration: 11, ease: "sine.inOut", yoyo: true, repeat: -1 });
+            gsap.to("#experience_img_border", { scaleY: '1.11', duration: 11, ease: "sine.inOut", yoyo: true, repeat: -1 });
             gsap.to("#experience_img_border", { scaleY: '1.19', duration: 11, ease: "sine.inOut", yoyo: true, repeat: -1});
         }});
     
     
         gsap.to("#linear_gradient_experience", { height: '100%', duration: 3, ease:"back.out", delay: 1, opacity:1, onComplete: () => {
-            gsap.to("#linear_gradient_experience", { scaleY: '1.11', duration: 8, ease: "sine.inOut", yoyo: true, repeat: -1 });
-            gsap.to("#linear_gradient_experience", { scaleY: '1.22', duration: 8, ease: "sine.inOut", yoyo: true, repeat: -1});
+            gsap.to("#linear_gradient_experience", { scaleY: '1.13', duration: 8, ease: "sine.inOut", yoyo: true, repeat: -1 });
+            gsap.to("#linear_gradient_experience", { scaleY: '1.24', duration: 8, ease: "sine.inOut", yoyo: true, repeat: -1});
         }});
 
 
@@ -98,7 +98,7 @@ const Experience = () => {
                         Interact with students in assistance to their coursework while evaluating and providing feedback to student work
                     </li>
                     <li>
-                        Meet with supervisors to discuss students' grades or to complete required grade-related paperworky
+                        Work with Professor to meet timelines and create grading criteria for assessments
                     </li>
                 </ul>
 
@@ -107,7 +107,7 @@ const Experience = () => {
 
         <div style={{marginTop: "25px"}}>
             <div className="experience_item">
-                <h3>University of Alberta</h3>
+                <h3>iGEM UAlberta Team</h3>
                 <div style={{display: "flex", justifyContent: "space-between"}}>
                     <h1>2024 iGEM Wiki Lead</h1>
                     <p style={{marginTop:"12px", opacity:"0.6"}}>April 2024 – October 2024</p>
