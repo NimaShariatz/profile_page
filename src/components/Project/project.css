@@ -135,8 +135,38 @@
     background-image: linear-gradient(to right bottom, #ececec, #f1f1f1, #f5f5f5, #fafafa, #ffffff);
     outline: 2px solid rgb(235, 235, 235);
     border-radius: 50%;
+    transition: transform 0.3s ease;
 
 }
+
+.language:nth-child(2){
+    transform: translateX(-7px);
+
+}
+.language:nth-child(3){
+    transform: translateX(-14px);
+    
+}
+
+
+.language_animate:hover .language {
+    transition: transform 0.3s ease;
+}
+
+
+
+.language_animate:hover .language:nth-child(2) {
+    transform: translateX(5px); 
+}
+
+.language_animate:hover .language:nth-child(3) {
+    transform: translateX(10px); 
+}
+
+
+
+
+
 
 @media (max-width: 760px) {
     .grid_container{
