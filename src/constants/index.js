@@ -20,6 +20,8 @@ import project_renewool from "/assets/images/RenewWool.png"
 
 import code_img from "/assets/images/code_img.png"
 
+import foodupcycling from "/assets/images/FoodUpcycling.png"
+
 export const uofa_img = uofa;
 
 
@@ -41,7 +43,9 @@ export const logo_python = python
 export const logo_sql = sql
 
 export const renewWool = project_renewool
+
 export const project_pic = project_header
+export const upcycle = foodupcycling
 
 export const code = code_img
 
