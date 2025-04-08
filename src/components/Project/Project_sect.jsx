@@ -179,7 +179,7 @@ const Project_sect = () => {
 
 
                 </div>
-                <a href='https://cmput401.ca/projects/32e9c1c0-dc63-4236-ad31-33d5f29fc601' target='#blank' className='project_link'>Check Portal <svg viewBox="0 0 24 24"><path d="M5 17.59L15.59 7H9V5h10v10h-2V8.41L6.41 19z"/></svg></a>
+                <a href='https://cmput401.ca/' target='#blank' className='project_link'>Check Portal <svg viewBox="0 0 24 24"><path d="M5 17.59L15.59 7H9V5h10v10h-2V8.41L6.41 19z"/></svg></a>
               </div>
             </div>
             
