@@ -84,7 +84,8 @@
     color: var(--font_color);
 }
 .project_link:visited{
-    color: var(--sect_color2);
+    color: #e2aaca;
+    fill: #e2aaca;
 }
 .project_link svg{
     width: 14px;
@@ -93,9 +94,8 @@
     display: inline;
     transform: translateY(2px);
 }
-.project_link:visited{
-    fill: var(--sect_color2)
-}
+
+
 
 
 
@@ -168,7 +168,7 @@
 
 
 
-@media (max-width: 760px) {
+@media (max-width: 805px) {
     .grid_container{
         grid-template-rows: repeat(1, 1fr);
         grid-template-columns: repeat(1, 1fr);

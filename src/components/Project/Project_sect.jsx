@@ -11,7 +11,7 @@ const Project_sect = () => {
 
     useEffect(() => {
     
-        gsap.to("#project_img_border", { height: '98%', duration: 3, ease:"back.out", delay: 1, opacity:1, onComplete: () => {
+        gsap.to("#project_img_border", { height: '100%', duration: 3, ease:"back.out", delay: 1, opacity:1, onComplete: () => {
             gsap.to("#project_img_border", { scaleY: '1.12', duration: 11, ease: "sine.inOut", yoyo: true, repeat: -1 });
             gsap.to("#project_img_border", { scaleY: '1.18', duration: 11, ease: "sine.inOut", yoyo: true, repeat: -1});
         }});
@@ -105,7 +105,7 @@ const Project_sect = () => {
             <div className='a_project'>
               <img style={{borderRadius:"20px"}} src={renewWool} alt="University of Alberta"/>
               <h2 style={{paddingInline: "8px", paddingTop: "18px"}}>ReneWool</h2>
-              <p style={{paddingInline: "8px"}}>A project involving multiple disciplines, with the objective of the wiki 
+              <p style={{paddingInline: "8px", minHeight: "130px"}}>A project involving multiple disciplines, with the objective of the wiki 
                 team being to produce a public website which serves to showcase the science team’s findings in a novel way.</p>
               <div style={{display:"flex", justifyContent: "space-between", paddingBlock:"30px"}}>
                 <div style={{display:"flex"}} className='language_animate'>
@@ -151,7 +151,7 @@ const Project_sect = () => {
             <div className='a_project'>
               <img style={{borderRadius:"20px"}} src={upcycle} alt="University of Alberta"/>
               <h2 style={{paddingInline: "8px", paddingTop: "18px"}}>FoodUpcycling - ROD</h2>
-              <p style={{paddingInline: "8px"}}>
+              <p style={{paddingInline: "8px", minHeight: "130px"}}>
                 A community volunteer project with the aim of taking farmer donations and distributing them to beneficiaries in need by volunteers.
               </p>
               <div style={{display:"flex", justifyContent: "space-between", paddingBlock:"30px"}}>
@@ -179,7 +179,7 @@ const Project_sect = () => {
 
 
                 </div>
-                <a href='https://cmput401.ca/projects/32e9c1c0-dc63-4236-ad31-33d5f29fc601' target='#blank' className='project_link'>Check Portal<svg viewBox="0 0 24 24"><path d="M5 17.59L15.59 7H9V5h10v10h-2V8.41L6.41 19z"/></svg></a>
+                <a href='https://cmput401.ca/projects/32e9c1c0-dc63-4236-ad31-33d5f29fc601' target='#blank' className='project_link'>Check Portal <svg viewBox="0 0 24 24"><path d="M5 17.59L15.59 7H9V5h10v10h-2V8.41L6.41 19z"/></svg></a>
               </div>
             </div>
             
