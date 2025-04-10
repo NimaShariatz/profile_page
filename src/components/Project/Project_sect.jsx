@@ -5,7 +5,7 @@ import {start_width, start_height} from "../../constants/index.js"
 
 import '../Project/Project.css';
 
-import {project_pic, renewWool, upcycle} from "../../constants/index.js"
+import {project_pic, renewWool, upcycle, henning_logo} from "../../constants/index.js"
 
 const Project_sect = () => {
 
@@ -103,7 +103,7 @@ const Project_sect = () => {
           <div className='grid_container'>
 
             <div className='a_project'>
-              <img style={{borderRadius:"20px"}} src={renewWool} alt="University of Alberta"/>
+              <img style={{borderRadius:"20px", width:"100%", height:"420px", objectFit:"cover", objectPosition:"top"}} src={renewWool} alt="University of Alberta"/>
               <h2 style={{paddingInline: "8px", paddingTop: "18px"}}>ReneWool</h2>
               <p style={{paddingInline: "8px", minHeight: "130px"}}>A project involving multiple disciplines, with the objective of the wiki 
                 team being to produce a public website which serves to showcase the science team’s findings in a novel way.</p>
@@ -149,7 +149,7 @@ const Project_sect = () => {
 
 
             <div className='a_project'>
-              <img style={{borderRadius:"20px"}} src={upcycle} alt="University of Alberta"/>
+              <img style={{borderRadius:"20px", width:"100%", height:"420px", objectFit:"cover", objectPosition:"top"}} src={upcycle} alt="University of Alberta"/>
               <h2 style={{paddingInline: "8px", paddingTop: "18px"}}>FoodUpcycling - ROD</h2>
               <p style={{paddingInline: "8px", minHeight: "130px"}}>
                 A community volunteer project with the aim of taking farmer donations and distributing them to beneficiaries in need by volunteers.
@@ -183,7 +183,74 @@ const Project_sect = () => {
               </div>
             </div>
             
-            <div className='a_project'>Henning the Navigator &#40;In progress&#41;</div>
+
+
+
+
+
+            <div className='a_project'>
+              <img style={{borderRadius:"20px", width:"100%", height:"420px", objectFit:"cover", objectPosition:"bottom"}} src={henning_logo} alt="University of Alberta"/>
+                <h2 style={{paddingInline: "8px", paddingTop: "18px"}}>Henning the Navigator</h2>
+                <p style={{paddingInline: "8px", minHeight: "130px"}}>
+                  A map navigation tool for the flight simulator IL-2 Sturmovik: Great Battles. Wavepoints on a map are set with distance, speed and heading which output 
+                  a timed navigational path.
+                </p>
+                <div style={{display:"flex", justifyContent: "space-between", paddingBlock:"30px"}}>
+                  <div style={{display:"flex"}} className='language_animate'>
+
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" className='language' style={{ zIndex:"1"}}><path fill="#00bcd4" d="M16 12c7.444 0 12 
+                    2.59 12 4s-4.556 4-12 4s-12-2.59-12-4s4.556-4 12-4m0-2c-7.732 0-14 2.686-14 6s6.268 6 14 6s14-2.686 14-6s-6.268-6-14-6"/>
+                    <path fill="#00bcd4" d="M16 
+                    14a2 2 0 1 0 2 2a2 2 0 0 0-2-2"/><path fill="#00bcd4" d="M10.458 5.507c2.017 0 5.937 3.177 9.006 8.493c3.722 6.447 3.757 11.687 2.536 12.392a.9.9 0 0 
+                    1-.457.1c-2.017 0-5.938-3.176-9.007-8.492C8.814 11.553 8.779 6.313 10 5.608a.9.9 0 0 1 .458-.1m-.001-2A2.87 2.87 0 0 0 9 3.875C6.13 5.532 6.938 12.304 
+                    10.804 19c3.284 5.69 7.72 9.493 10.74 9.493A2.87 2.87 0 0 0 23 28.124c2.87-1.656 2.062-8.428-1.804-15.124c-3.284-5.69-7.72-9.493-10.74-9.493Z"/>
+                    <path fill="#00bcd4" d="M21.543 5.507a.9.9 0 0 1 .457.1c1.221.706 1.186 5.946-2.536 12.393c-3.07 5.316-6.99 8.493-9.007 8.493a.9.9 0 0 
+                    1-.457-.1C8.779 25.686 8.814 20.446 12.536 14c3.07-5.316 6.99-8.493 9.007-8.493m0-2c-3.02 0-7.455 3.804-10.74 9.493C6.939 19.696 6.13 26.468 
+                    9 28.124a2.87 2.87 0 0 0 
+                    1.457.369c3.02 0 7.455-3.804 10.74-9.493C25.061 12.304 25.87 5.532 23 3.876a2.87 2.87 0 0 0-1.457-.369"/>
+                  </svg>
+
+                                    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" className='language' style={{paddingTop: "6px", zIndex:"1"}}>
+	                  <path fill="#e44f26" d="M5.902 27.201L3.655 2h24.69l-2.25 25.197L15.985 30z" />
+                    <path fill="#f1662a" d="m16 27.858l8.17-2.265l1.922-21.532H16z" />
+                    <path fill="#ebebeb" d="M16 13.407h-4.09l-.282-3.165H16V7.151H8.25l.074.83l.759 8.517H16zm0 8.027l-.014.004l-3.442-.929l-.22-2.465H9.221l.433 4.852l6.332 1.758l.014-.004z" />
+                    <path fill="#fff" d="M15.989 13.407v3.091h3.806l-.358 4.009l-3.448.93v3.216l6.337-1.757l.046-.522l.726-8.137l.076-.83zm0-6.256v3.091h7.466l.062-.694l.141-1.567l.074-.83z" />
+                  </svg>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 128 128" className='language' style={{paddingTop: "6px", zIndex:"2"}}>
+                    <path fill="#1572b6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754l-45.243 12.543z" />
+                    <path fill="#33a9dc" d="m64.001 117.062l36.559-10.136l8.601-96.354h-45.16z" />
+                    <path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711l-3.4 38.114h-30.95z" />
+                    <path fill="#ebebeb" d="m64.083 87.349l-.061.018l-15.403-4.159l-.985-11.031H33.752l1.937 21.717l28.331 7.863l.063-.018z" />
+                    <path fill="#fff" d="m81.127 64.675l-1.666 18.522l-15.426 4.164v14.39l28.354-7.858l.208-2.337l2.406-26.881z" />
+                    <path fill="#ebebeb" d="M64.048 23.435v13.831H30.64l-.277-3.108l-.63-7.012l-.331-3.711zm-.047 27.996v13.831H48.792l-.277-3.108l-.631-7.012l-.33-3.711z" />
+                  </svg>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 72 72" className='language' style={{paddingTop: "6px", zIndex:"3"}}>
+                    <path fill="#fcea2b" d="M59.035 60h-46.07a.97.97 0 0 1-.965-.965v-46.07a.97.97 0 0 1 .965-.965h46.07a.97.97 0 0 1 .965.965v46.07a.97.97 0 0 1-.965.965" />
+                    <g fill="none" stroke="#000" strokeLinejoin="round">
+                      <path strokeWidth="2" d="M59.035 60h-46.07a.97.97 0 0 1-.965-.965v-46.07a.97.97 0 0 1 .965-.965h46.07a.97.97 0 0 1 .965.965v46.07a.97.97 0 0 1-.965.965Z" />
+                      <path strokeLinecap="round" strokeMiterlimit="10" strokeWidth="4.453" d="M53.82 41.34c-.456-1.777-2.429-3.11-4.793-3.11c-2.703 0-4.893 1.743-4.893 3.896c0 2.151 2.191 3.896 4.893 3.896l-.1.013c2.703 0 4.893 1.745 4.893 3.896c0 2.153-2.191 3.896-4.893 3.896c-2.364 0-4.337-1.336-4.793-3.112" clipRule="evenodd" />
+                      <path strokeLinecap="round" strokeMiterlimit="10" strokeWidth="4.456" d="M36.74 38.23v10.03a5.568 5.568 0 0 1-9.296 4.139" clipRule="evenodd" />
+                    </g>
+                  </svg>
+
+                    
+
+
+                  </div>
+                  <p href='#' target='#blank' className='project_link'>&#40;In progress&#41;</p>
+                </div>
+            </div>
+
+
+
+
+
+
+            
             <div className='a_project'>2025 IGEM Biology Project &#40;In progress&#41;</div>
 
           </div>
