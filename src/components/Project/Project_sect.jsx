@@ -149,7 +149,7 @@ const Project_sect = () => {
 
 
             <div className='a_project'>
-              <img style={{borderRadius:"20px", width:"100%", height:"420px", objectFit:"cover", objectPosition:"top"}} src={upcycle} alt="University of Alberta"/>
+              <img style={{borderRadius:"20px", width:"100%", height:"420px", objectFit:"cover", objectPosition:"left top"}} src={upcycle} alt="FoodUpcycling"/>
               <h2 style={{paddingInline: "8px", paddingTop: "18px"}}>FoodUpcycling - ROD</h2>
               <p style={{paddingInline: "8px", minHeight: "130px"}}>
                 A community volunteer project with the aim of taking farmer donations and distributing them to beneficiaries in need by volunteers.
@@ -189,7 +189,7 @@ const Project_sect = () => {
 
 
             <div className='a_project'>
-              <img style={{borderRadius:"20px", width:"100%", height:"420px", objectFit:"cover", objectPosition:"bottom"}} src={henning_logo} alt="University of Alberta"/>
+              <img style={{borderRadius:"20px", width:"100%", height:"420px", objectFit:"cover", objectPosition:"bottom"}} src={henning_logo} alt="Henning the Navigator"/>
                 <h2 style={{paddingInline: "8px", paddingTop: "18px"}}>Henning the Navigator</h2>
                 <p style={{paddingInline: "8px", minHeight: "130px"}}>
                   A map navigation tool for the flight simulator IL-2 Sturmovik: Great Battles. Wavepoints on a map are set with distance, speed and heading which output 
