@@ -241,7 +241,7 @@ const Project_sect = () => {
 
 
                   </div>
-                  <p href='#' target='#blank' className='project_link'>&#40;In progress&#41;</p>
+                  <a href='https://github.com/NimaShariatz/Navigator' target='#blank' className='project_link'>&#40;In progress<svg viewBox="0 0 24 24"><path d="M5 17.59L15.59 7H9V5h10v10h-2V8.41L6.41 19z"/></svg>&#41;</a>
                 </div>
             </div>
 
