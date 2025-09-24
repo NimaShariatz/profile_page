@@ -23,7 +23,7 @@ import code_img from "/assets/images/code_img.png"
 import foodupcycling from "/assets/images/FoodUpcycling.png"
 
 import henning from "/assets/images/henning_logo.png"
-
+import ashbloom from "/assets/images/Ashbloom.png"
 export const uofa_img = uofa;
 
 
@@ -52,6 +52,7 @@ export const upcycle = foodupcycling
 export const code = code_img
 
 export const henning_logo = henning
+export const ashbloom_pic = ashbloom
 
 export const start_width = window.innerWidth
 export const start_height = window.innerHeight
