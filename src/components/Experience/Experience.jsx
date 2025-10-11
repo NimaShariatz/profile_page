@@ -86,7 +86,38 @@ const Experience = () => {
             </div>
         </div>
 
-        <div style={{marginTop: "15vw"}}>
+
+
+
+        <div style={{marginTop: "14vw"}}>
+            <div className="experience_item">
+                <h3>iGEM UAlberta Team</h3>
+                <div style={{display: "flex", justifyContent: "space-between"}}>
+                    <h1>2024 & 2025 iGEM Wiki Lead</h1>
+                    <p style={{marginTop:"12px", opacity:"0.6"}}>April 2024 – October 2025</p>
+                </div>
+                <ul className="list">
+                    <li className="lists">
+                        Design and produce a novel wiki to display scientific results for the 2024 & 2025 University of Alberta entry
+                    </li>
+                    <li>
+                        Communicate with groups of other disciplines to meet past and new requriements
+                    </li>
+                    <li>
+                        Manage developers to produce layouts and components
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div style={{marginTop: "25px"}}>
             <div className="experience_item">
                 <h3>University of Alberta</h3>
                 <div style={{display: "flex", justifyContent: "space-between"}}>
@@ -105,24 +136,7 @@ const Experience = () => {
             </div>
         </div>
 
-        <div style={{marginTop: "25px"}}>
-            <div className="experience_item">
-                <h3>iGEM UAlberta Team</h3>
-                <div style={{display: "flex", justifyContent: "space-between"}}>
-                    <h1>2024 iGEM Wiki Lead</h1>
-                    <p style={{marginTop:"12px", opacity:"0.6"}}>April 2024 – October 2024</p>
-                </div>
-                <ul className="list">
-                    <li className="lists">
-                        Design and produce a novel wiki to display scientific results for the 2024 University of Alberta entry
-                    </li>
-                    <li>
-                        Communicate with groups of other disciplines to meet past and new requriements
-                    </li>
-                </ul>
 
-            </div>
-        </div>
 
 
 

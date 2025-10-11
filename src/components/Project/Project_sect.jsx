@@ -105,7 +105,7 @@ const Project_sect = () => {
 
             <div className='a_project'>
               <img style={{borderRadius:"20px", width:"100%", height:"420px", objectFit:"cover", objectPosition:"top"}} src={ashbloom_pic} alt="University of Alberta"/>
-              <h2 style={{paddingInline: "8px", paddingTop: "18px"}}>ASHBLOOM</h2>
+              <h2 style={{paddingInline: "8px", paddingTop: "18px"}}>AshBloom</h2>
               <p style={{paddingInline: "8px", minHeight: "130px"}}>A project involving multiple disciplines, with the objective of the wiki 
                 team being to produce a public website which serves to showcase the science team’s findings in a novel way.</p>
               <div style={{display:"flex", justifyContent: "space-between", paddingBlock:"30px"}}>
