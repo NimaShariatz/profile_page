@@ -267,11 +267,11 @@ const Education_touchedOn = () => {
                 <h1 style={{color:"#b6a7de", padding:"0.2vw", paddingLeft:"3vw"}}>Javascript</h1>
                 <h1 style={{color:"#c3a7da", padding:"0.2vw", paddingLeft:"3vw"}}>ASM</h1>
                 <h1 style={{color:"#d0a8d5", padding:"0.2vw", paddingLeft:"3vw"}}>React</h1>
-                <h1 style={{color:"#daa9cf", padding:"0.2vw", paddingLeft:"3vw"}}>Android Studio</h1>
-                <h1 style={{color:"#e2aaca", padding:"0.2vw", paddingLeft:"3vw"}}>SQL</h1>
+                <h1 style={{color:"#daa9cf", padding:"0.2vw", paddingLeft:"3vw"}}>Django</h1>
+                <h1 style={{color:"#e2aaca", padding:"0.2vw", paddingLeft:"3vw"}}>.NET</h1>
                 <h1 style={{color:"#e9adc4", padding:"0.2vw", paddingLeft:"3vw"}}>Figma</h1>
 
-                <h1 style={{color:"#fcd0e1", padding:"0.2vw"}}>With a focus on frontend</h1>
+                <h1 style={{color:"#fcd0e1", padding:"0.2vw"}}>With experience on frontend</h1>
 
             </div>
             <canvas id="webgl"></canvas>
@@ -280,5 +280,6 @@ const Education_touchedOn = () => {
     </div>
   )
 }
+
 
 export default Education_touchedOn
