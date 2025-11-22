@@ -89,11 +89,11 @@
 
 #education_focus_card{
     position: absolute;
-    right: -650px;
+    right: -655px;
     top: 60%;
-    width: 445px;
+    width: fit-content;
     z-index: 5;
-    padding-inline: 23px;
+    padding-inline: 35px;
     padding-block: 20px;
     box-shadow: var(--box_shadow);
     border-radius: 20px;
